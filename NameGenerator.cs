@@ -32,9 +32,8 @@ namespace Release_Name_Generator
             {
                 LoadFiles();
             }
-            Random dice = new Random();
-            return CapitalizeFirst(Adjectives[dice.Next(0, Adjectives.Count - 1)]) + " " +
-                CapitalizeFirst(Nouns[dice.Next(0, Nouns.Count - 1)]);
+            return CapitalizeFirst(Adjectives[RandomGenerator.GetRandomNumber(0, Adjectives.Count - 1)]) + " " +
+                CapitalizeFirst(Nouns[RandomGenerator.GetRandomNumber(0, Nouns.Count - 1)]);
         }
     }
 }
