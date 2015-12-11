@@ -1,0 +1,31 @@
+﻿<Window x:Class="Release_Name_Generator.Setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Release_Name_Generator"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Closing="Window_Closing"
+        Title="Settings" Height="351.332" Width="300">
+    <Grid>
+        <Label x:Name="noun_label" Content="Noun mode" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="144"/>
+        <RadioButton x:Name="all_Noun" Content="All nouns" GroupName="syl" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Checked="all_Noun_Checked"/>
+        <RadioButton x:Name="one_Syl" Content="One syllable" GroupName="syl" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Checked="one_Syl_Checked"/>
+        <RadioButton x:Name="two_Syl" Content="Two syllables" GroupName="syl" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Checked="two_Syl_Checked"/>
+        <RadioButton x:Name="three_Syl" Content="Three syllables" GroupName="syl" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Checked="three_Syl_Checked"/>
+        <RadioButton x:Name="four_Syl" Content="Four syllables" GroupName="syl" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Checked="four_Syl_Checked"/>
+
+
+
+        <Label x:Name="adj_label" Content="Adjective mode" HorizontalAlignment="Left" Margin="10,138,0,103"/>
+        <RadioButton x:Name="all_adj" Content="All adjectives" GroupName="adj" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Checked="all_adj_Checked"/>
+        <RadioButton x:Name="one_adj" Content="One syllable" GroupName="adj" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Checked="one_adj_Checked"/>
+        <RadioButton x:Name="two_adj" Content="Two syllables" GroupName="adj" HorizontalAlignment="Left" Margin="10,206,0,0" VerticalAlignment="Top" Checked="two_adj_Checked"/>
+        <RadioButton x:Name="three_adj" Content="Three syllables" GroupName="adj" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" Checked="three_adj_Checked"/>
+        <RadioButton x:Name="four_adj" Content="Four syllables" GroupName="adj" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top" Checked="four_adj_Checked"/>
+        <Button x:Name="return_Btn" Content="Return" HorizontalAlignment="Left" Margin="110,276,0,0" VerticalAlignment="Top" Width="75" Click="return_Btn_Click"/>
+
+
+    </Grid>
+</Window>

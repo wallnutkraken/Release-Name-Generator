@@ -1,0 +1,17 @@
+﻿<Window x:Class="Release_Name_Generator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Release_Name_Generator"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Title="Strict Sharpie" Height="236" Width="248">
+    <Grid>
+        <Label x:Name="label" Content="Release Name Generator" HorizontalAlignment="Center" Margin="10,10,10,0" VerticalAlignment="Top" Height="57" Width="222" FontSize="19"/>
+        <Button x:Name="generate_Btn" Content="Generate" HorizontalAlignment="Left" Margin="67,138,0,0" VerticalAlignment="Top" Width="92" Click="generate_Btn_Click"/>
+        <TextBox x:Name="generator_Box" HorizontalAlignment="Left" Height="23" Margin="20,72,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="199"/>
+        <Button x:Name="settings_Btn" Content="Settings" HorizontalAlignment="Left" Margin="67,163,0,0" VerticalAlignment="Top" Width="92" Click="settings_Btn_Click"/>
+
+    </Grid>
+</Window>
