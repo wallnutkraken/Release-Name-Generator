@@ -26,6 +26,8 @@ namespace Release_Name_Generator
 
         private void Window_Closing(object sender, CancelEventArgs e)
         {
+            /* Tries loading the files containing words (since we probably changed some settings here). */
+            /* The try catch is important because these files may not always exist. */
             try
             {
                 NameGenerator.LoadFiles();
@@ -34,10 +36,15 @@ namespace Release_Name_Generator
             {
                 MessageBox.Show(exc.Message);
             }
+            /* And after it is done with reading the files (or failing to do so), this window refers to it's */
+            /* parent (called Owner, in this case) and basically restores it to it's normal state. */
             Owner.Show();
             Owner.IsEnabled = true;
             Owner.Focus();
         }
+
+        /* These following methods are all just methods to set the settings in the static */
+        /* Settings class (the name similarity may be confusing, hm). */
         private void all_Noun_Checked(object sender, RoutedEventArgs e)
         {
             Settings.NounSetting = NounLevel.All;

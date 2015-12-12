@@ -8,8 +8,18 @@ namespace Release_Name_Generator
 {
     static class FileHandler
     {
+        /* These two constants are where the program will look for the adjective and */
+        /* noun files. */
+
+        /* Do remember that ./ is the current directory and that in C#, you can use */
+        /* both windows-style and UNIX-style directory paths (i.e. the forward and backward slash) */
         private const string ADJECTIVES_DIR = @"./adjectives/";
         private const string NOUNS_DIR = @"./nouns/";
+
+        /// <summary>
+        /// Reads the noun file, depending on what syllable count is selected. Default is all.
+        /// </summary>
+        /// <param name="syllableCount">Enum of NounLevel which is used to select how many syllables in a noun you want</param>
         public static List<string> OpenNouns(NounLevel syllableCount)
         {
             if (syllableCount == NounLevel.All)
@@ -22,6 +32,10 @@ namespace Release_Name_Generator
             }
         }
 
+        /// <summary>
+        /// Reads the adjective file, depending on what syllable count is selected. Default is all.
+        /// </summary>
+        /// <param name="syllableCount">Enum of AdjectiveLevel which is used to select how many syllables in an adjective you want</param>
         public static List<string> OpenAdjectives(AdjectiveLevel syllableCount)
         {
             if (syllableCount == AdjectiveLevel.All)

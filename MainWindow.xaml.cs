@@ -27,6 +27,11 @@ namespace Release_Name_Generator
 
         private void settings_Btn_Click(object sender, RoutedEventArgs e)
         {
+            /* Once the button to open the settings window is clicked, this window becomes */
+            /* hidden and disabled (the disabled part may have been a little redundant. Oh well! */
+            /* Then, a Setting window is created (which won't be shown in the task bar) and this window */
+            /* is declared it's parent. This becomes important when we want to close the newly-created */
+            /* Setting window. */
             this.Hide();
             this.IsEnabled = false;
             Setting settings = new Setting();
